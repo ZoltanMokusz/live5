@@ -13,7 +13,7 @@ modules:
       group: destinations
       properties:
        name: node_be
-       url: ~{service_url}
+       url: ~{url}
        forwardAuthToken: true
     
  - name: db
