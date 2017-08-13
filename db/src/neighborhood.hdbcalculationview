@@ -4,32 +4,23 @@
 <localVariables>
   <variable id="IP_USER" parameter="true">
     <descriptions defaultDescription="IP_USER">
-      <comment text="User"/>
+      <comment text="UserName"/>
     </descriptions>
-    <variableProperties datatype="NVARCHAR" length="256" scale="null" mandatory="true">
+    <variableProperties datatype="VARCHAR" length="255" mandatory="true">
       <valueDomain type="empty"/>
       <selection multiLine="false" type="Single"/>
-      <derivationRule inputEnabled="true">
-        <resourceUri>live5.db::graph.Users</resourceUri>
-        <resultElementName>user</resultElementName>
-      </derivationRule>
-      <defaultRange/>
     </variableProperties>
   </variable>
   <variable id="IP_MIN" parameter="true">
-    <descriptions defaultDescription="IP_MIN">
-      <comment text="Minimal"/>
-    </descriptions>
+    <descriptions defaultDescription="IP_MIN"/>
     <variableProperties datatype="INTEGER" mandatory="true">
       <valueDomain type="empty"/>
       <selection multiLine="false" type="Single"/>
     </variableProperties>
   </variable>
   <variable id="IP_MAX" parameter="true">
-    <descriptions defaultDescription="IP_MAX">
-      <comment text="Maximum"/>
-    </descriptions>
-    <variableProperties datatype="INTEGER" mandatory="false">
+    <descriptions defaultDescription="IP_MAX"/>
+    <variableProperties datatype="INTEGER" mandatory="true">
       <valueDomain type="empty"/>
       <selection multiLine="false" type="Single"/>
     </variableProperties>

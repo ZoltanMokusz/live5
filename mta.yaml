@@ -50,6 +50,29 @@ modules:
       properties:
          url: ${default-url}
 
+
+ 
+
+
+ - name: ui
+   type: html5
+   path: ui
+   requires:
+    - name: live5uaa
+    - name: node_api
+      group: destinations
+      properties:
+       name: node_be
+       url: ~{url}
+       forwardAuthToken: true
+    - name: xsjs_api
+      group: destinations
+      properties:
+       name: xsjs_be
+       url: ~{url}
+       forwardAuthToken: true         
+   
+
 resources:
  - name: live5uaa
    type: com.sap.xs.uaa
