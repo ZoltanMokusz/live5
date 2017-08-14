@@ -50,6 +50,17 @@ sap.ui.define([
 			},
 
 
+		/* =========================================================== */
+		/* event handlers                                              */
+		/* =========================================================== */
+
+		onTitlePress: function(evt) {
+			this.getRouter().navTo("user", {
+				objectId: this.getView().getBindingContext().getProperty("clusterNumber"),
+				user: evt.getSource().getTitle().split(" ")[0].substring(1)
+			}, true);
+		},
+
 			/**
 			 * Updates the item count within the line item table's header
 			 * @param {object} oEvent an event containing the total number of items in the list
