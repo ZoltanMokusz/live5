@@ -28,12 +28,13 @@ sap.ui.define([
 			//this.byId("formPanel").setHeaderText("Neighborhood for @" + this.getRouter()._oRouter._prevMatchedRequest.split("/")[3]);
 			this.onRefresh();
 		},
-		
+
 		onRefresh: function() {
 			var user = this.getRouter()._oRouter._prevMatchedRequest.split("/")[3];
 			var modelData = {};
 			$.ajax({
-				url: "/index.xsjs?cmd=neighborhood&user=" + user + "&direction=" + this.byId("radioDirection").getSelectedButton().getText().toLowerCase() + "&min=" + this.byId("sliderMin").getValue() + "&max=" + this.byId("sliderMax").getValue(),
+				url: "/index.xsjs?cmd=neighborhood&user=" + user + "&direction=" + this.byId("radioDirection").getSelectedButton().getText().toLowerCase() +
+					"&min=" + this.byId("sliderMin").getValue() + "&max=" + this.byId("sliderMax").getValue(),
 				type: "get",
 				async: false,
 				error: function() {
@@ -56,7 +57,7 @@ sap.ui.define([
 		 * If not, it will replace the current entry of the browser history with the worklist route.
 		 * @public
 		 */
-		onNavBack : function() {
+		onNavBack: function() {
 
 			var oHistory = History.getInstance(),
 				sPreviousHash = oHistory.getPreviousHash();
@@ -67,9 +68,11 @@ sap.ui.define([
 			} else {
 				// Otherwise we go backwards with a forward history
 				var bReplace = true;
-				this.getRouter().navTo("object", {objectId: this.getRouter()._oRouter._prevMatchedRequest.split("/")[1]}, bReplace);
+				this.getRouter().navTo("object", {
+					objectId: this.getRouter()._oRouter._prevMatchedRequest.split("/")[1]
+				}, bReplace);
 			}
-	}
+		}
 
 	});
 });

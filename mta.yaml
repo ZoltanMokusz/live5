@@ -50,10 +50,6 @@ modules:
       properties:
          url: ${default-url}
 
-
- 
-
-
  - name: ui
    type: html5
    path: ui
@@ -71,7 +67,17 @@ modules:
        name: xsjs_be
        url: ~{url}
        forwardAuthToken: true         
-   
+ 
+ - name: uita
+   type: html5
+   path: uita
+   requires:
+    - name: xsjs_api
+      group: destinations
+      properties:
+       name: xsjs_be
+       url: ~{url}
+       forwardAuthToken: true      
 
 resources:
  - name: live5uaa
