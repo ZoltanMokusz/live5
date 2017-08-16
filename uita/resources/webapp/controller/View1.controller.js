@@ -3,7 +3,7 @@ sap.ui.define([
 ], function(Controller) {
 	"use strict";
 
-	return Controller.extend("live5.uitauita.controller.View1", {
+	return Controller.extend("live5uita.controller.View1", {
 		onRefresh: function() {
 			this.getView().byId("D3Chart").doRefresh();
 			this.byId("pullToRefresh").hide();

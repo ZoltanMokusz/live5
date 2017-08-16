@@ -4,7 +4,7 @@ sap.ui.define([
 	"sap/ui/core/Control"
 ], function(Control) {
 	"use strict";
-	return Control.extend("live5.uitauita.control.D3Chart", {
+	return Control.extend("live5uita.control.D3Chart", {
 		metadata: {
 			properties: {
 				type: {

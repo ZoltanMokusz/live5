@@ -1,5 +1,5 @@
-<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:custom="live5.uitauita.control"
-	controllerName="live5.uitauita.controller.View1">
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:custom="live5uita.control"
+	controllerName="live5uita.controller.View1">
 	<App>
 		<pages>
 			<Page title="{i18n&gt;title}">

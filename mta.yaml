@@ -1,6 +1,6 @@
 ID: live5
 _schema-version: '2.0'
-version: 0.0.1
+version: 1.0.1
 provider: Hana Academy
 
 modules:
@@ -66,12 +66,13 @@ modules:
       properties:
        name: xsjs_be
        url: ~{url}
-       forwardAuthToken: true         
- 
+       forwardAuthToken: true
+
  - name: uita
    type: html5
    path: uita
    requires:
+    - name: live5uaa
     - name: xsjs_api
       group: destinations
       properties:

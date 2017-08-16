@@ -1,7 +1,7 @@
 {
 	"_version": "1.5.0",
 	"sap.app": {
-		"id": "live5.uitauita",
+		"id": "live5uita",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"applicationVersion": {
@@ -40,7 +40,7 @@
 
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "live5.uitauita.view.View1",
+			"viewName": "live5uita.view.View1",
 			"type": "XML"
 		},
 		"dependencies": {
@@ -63,7 +63,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "live5.uitauita.i18n.i18n"
+					"bundleName": "live5uita.i18n.i18n"
 				}
 			}
 		},

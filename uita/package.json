@@ -1,5 +1,5 @@
 {
-	"name": "live5.uitauita-approuter",
+	"name": "live5uita-approuter",
 	"engines": {
 		"node": ">=4.0.0 <7.0.0"
 	},

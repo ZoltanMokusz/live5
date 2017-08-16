@@ -1,11 +1,11 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
 	"sap/ui/Device",
-	"live5/uitauita/model/models"
+	"live5uita/model/models"
 ], function(UIComponent, Device, models) {
 	"use strict";
 
-	return UIComponent.extend("live5.uitauita.Component", {
+	return UIComponent.extend("live5uita.Component", {
 
 		metadata: {
 			manifest: "json"
